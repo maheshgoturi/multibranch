@@ -7,7 +7,7 @@ pipeline {
                     echo "Running checkout"
                     gitScmVars = checkout scm
                     echo "Running checkout complete"
-                    $gitScmVars
+                    echo "$gitScmVars"
                 }
             }
         }
