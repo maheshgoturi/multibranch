@@ -4,7 +4,9 @@ pipeline {
         stage('List env vars') {
             steps {
                 script {
-                    checkout scm
+                    echo "Running checkout"
+                    sh "checkout scm"
+                    echo "Running checkout complete"
                 }
             }
         }
