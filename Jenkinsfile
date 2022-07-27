@@ -5,7 +5,7 @@ pipeline {
             steps {
                 script {
                     echo "Running checkout"
-                    sh "checkout scm"
+                    checkout scm
                     echo "Running checkout complete"
                 }
             }
