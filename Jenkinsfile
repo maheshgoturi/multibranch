@@ -5,8 +5,9 @@ pipeline {
             steps {
                 script {
                     echo "Running checkout"
-                    checkout scm
+                    gitScmVars = checkout scm
                     echo "Running checkout complete"
+                    $gitScmVars
                 }
             }
         }
