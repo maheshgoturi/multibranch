@@ -3,12 +3,7 @@ pipeline {
     stages {
         stage('List env vars') {
             steps {
-                script {
-                    echo "Running checkout"
-                    gitScmVars = checkout scm
-                    echo "Running checkout complete"
-                    echo "$gitScmVars"
-                }
+                echo "${env.GIT_BRANCH}"
             }
         }
 
